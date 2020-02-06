@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+
+    
+
+    
+
+
+
+    <meta charset="utf-8">
+    
+    
+    
+    
+    <title>所以，这个 Blog 是怎么来的呢 | 小汪同学 | 记住时刻保持好奇心！</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <meta name="theme-color" content="#3F51B5">
+    
+    
+    <meta name="keywords" content="learning,hexo">
+    <meta name="description" content="是的，小汪同学的自建 Blog 来了。  2020 年的春节假期，被一系列关键词渲染得异常特殊：  「武汉肺炎」、「确诊人数」、「封城」、「一级响应」、「口罩预约」、「复工通知」  对于返乡后一直宅着的我而言，意外延长的假期为这个 Blog 的诞生提供了基础——有时间来做些自己以前想做而未行动的事情了。 做为第一篇文章，记录一下这个 Blog 是如何搭建的。  写在开头 感谢 CodeSheep">
+<meta property="og:type" content="article">
+<meta property="og:title" content="所以，这个 Blog 是怎么来的呢">
+<meta property="og:url" content="http://benwong1024.github.io/2020/02/06/hexo-learning-1/index.html">
+<meta property="og:site_name" content="小汪同学">
+<meta property="og:description" content="是的，小汪同学的自建 Blog 来了。  2020 年的春节假期，被一系列关键词渲染得异常特殊：  「武汉肺炎」、「确诊人数」、「封城」、「一级响应」、「口罩预约」、「复工通知」  对于返乡后一直宅着的我而言，意外延长的假期为这个 Blog 的诞生提供了基础——有时间来做些自己以前想做而未行动的事情了。 做为第一篇文章，记录一下这个 Blog 是如何搭建的。  写在开头 感谢 CodeSheep">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/1642454-3cd408ead1cb3493.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1200/format/webp">
+<meta property="article:published_time" content="2020-02-06T10:55:09.000Z">
+<meta property="article:modified_time" content="2020-02-06T15:25:24.944Z">
+<meta property="article:author" content="Ben Wong">
+<meta property="article:tag" content="learning">
+<meta property="article:tag" content="hexo">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://upload-images.jianshu.io/upload_images/1642454-3cd408ead1cb3493.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1200/format/webp">
+    
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="stylesheet" href="//unpkg.com/hexo-theme-material-indigo@latest/css/style.css">
+    <script>window.lazyScripts=[]</script>
+
+    <!-- custom head -->
+    
+
+<meta name="generator" content="Hexo 4.2.0"></head>
+
+<body>
+    <div id="loading" class="active"></div>
+
+    <aside id="menu" class="hide" >
+  <div class="inner flex-row-vertical">
+    <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menu-off">
+        <i class="icon icon-lg icon-close"></i>
+    </a>
+    <div class="brand-wrap" style="background-image:url(/img/brand.jpg)">
+      <div class="brand">
+        <a href="/" class="avatar waves-effect waves-circle waves-light">
+          <img src="/img/avatar.jpg">
+        </a>
+        <hgroup class="introduce">
+          <h5 class="nickname">Ben Wong</h5>
+          <a href="mailto:wangpei_1024@163.com" title="wangpei_1024@163.com" class="mail">wangpei_1024@163.com</a>
+        </hgroup>
+      </div>
+    </div>
+    <div class="scroll-wrap flex-col">
+      <ul class="nav">
+        
+            <li class="waves-block waves-effect">
+              <a href="/"  >
+                <i class="icon icon-lg icon-home"></i>
+                Home
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/archives"  >
+                <i class="icon icon-lg icon-archives"></i>
+                Archives
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/tags"  >
+                <i class="icon icon-lg icon-tags"></i>
+                Tags
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="//weibo.com/benwong1024" target="_blank" >
+                <i class="icon icon-lg icon-weibo"></i>
+                Weibo
+              </a>
+            </li>
+        
+      </ul>
+    </div>
+  </div>
+</aside>
+
+    <main id="main">
+        <header class="top-header" id="header">
+    <div class="flex-row">
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light on" id="menu-toggle">
+          <i class="icon icon-lg icon-navicon"></i>
+        </a>
+        <div class="flex-col header-title ellipsis">所以，这个 Blog 是怎么来的呢</div>
+        
+        <div class="search-wrap" id="search-wrap">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
+                <i class="icon icon-lg icon-chevron-left"></i>
+            </a>
+            <input type="text" id="key" class="search-input" autocomplete="off" placeholder="输入感兴趣的关键字">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="search">
+                <i class="icon icon-lg icon-search"></i>
+            </a>
+        </div>
+        
+        
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menuShare">
+            <i class="icon icon-lg icon-share-alt"></i>
+        </a>
+        
+    </div>
+</header>
+<header class="content-header post-header">
+
+    <div class="container fade-scale">
+        <h1 class="title">所以，这个 Blog 是怎么来的呢</h1>
+        <h5 class="subtitle">
+            
+                <time datetime="2020-02-06T10:55:09.000Z" itemprop="datePublished" class="page-time">
+  2020-02-06
+</time>
+
+
+            
+        </h5>
+    </div>
+
+    
+
+
+</header>
+
+
+<div class="container body-wrap">
+    
+    <aside class="post-widget">
+        <nav class="post-toc-wrap post-toc-shrink" id="post-toc">
+            <h4>TOC</h4>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#写在开头"><span class="post-toc-number">1.</span> <span class="post-toc-text">写在开头</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#安装"><span class="post-toc-number">2.</span> <span class="post-toc-text">安装</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#安装-Homebrew"><span class="post-toc-number">2.0.1.</span> <span class="post-toc-text">安装 Homebrew</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#安装-Node-js"><span class="post-toc-number">2.0.2.</span> <span class="post-toc-text">安装 Node.js</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#方法1"><span class="post-toc-number">2.0.2.1.</span> <span class="post-toc-text">方法1</span></a></li><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#方法2"><span class="post-toc-number">2.0.2.2.</span> <span class="post-toc-text">方法2</span></a></li></ol></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#安装-Hexo"><span class="post-toc-number">2.0.3.</span> <span class="post-toc-text">安装 Hexo</span></a></li></ol></li></ol></li></ol>
+        </nav>
+    </aside>
+
+
+<article id="post-hexo-learning-1"
+  class="post-article article-type-post fade" itemprop="blogPost">
+
+    <div class="post-card">
+        <h1 class="post-card-title">所以，这个 Blog 是怎么来的呢</h1>
+        <div class="post-meta">
+            <time class="post-time" title="2020-02-06 18:55:09" datetime="2020-02-06T10:55:09.000Z"  itemprop="datePublished">2020-02-06</time>
+
+            
+
+
+            
+<span id="busuanzi_container_page_pv" title="文章总阅读量" style='display:none'>
+    <i class="icon icon-eye icon-pr"></i><span id="busuanzi_value_page_pv"></span>
+</span>
+
+
+        </div>
+        <div class="post-content" id="post-content" itemprop="postContent">
+            <p>是的，小汪同学的自建 Blog 来了。</p>
+<p> 2020 年的春节假期，被一系列关键词渲染得异常特殊：</p>
+<blockquote>
+<p>「武汉肺炎」、「确诊人数」、「封城」、「一级响应」、「口罩预约」、「复工通知」</p>
+</blockquote>
+<p>对于返乡后一直宅着的我而言，意外延长的假期为这个 Blog 的诞生提供了基础——有时间来做些自己以前想做而未行动的事情了。</p>
+<p>做为第一篇文章，记录一下这个 Blog 是如何搭建的。</p>
+<hr>
+<h2 id="写在开头"><a href="#写在开头" class="headerlink" title="写在开头"></a>写在开头</h2><ul>
+<li><p>感谢 CodeSheep 的B站视频，提供了详细的搭建教程，让我学会了让这一切变成可能。<a href="https://www.bilibili.com/video/av44544186?from=search&seid=15635585637632752745" target="_blank" rel="noopener">《手把手教你从0开始搭建自己的个人博客 |无坑版视频教程| hexo》</a></p>
+</li>
+<li><p>感谢  <a href="https://github.com/yscoder" target="_blank" rel="noopener">yscoder</a> 制作的这套名为 <a href="https://github.com/yscoder/hexo-theme-indigo" target="_blank" rel="noopener">Indigo</a> 的 Blog 主题，让这里的一切变得美妙起来。</p>
+</li>
+<li><p>本 Blog 的搭建框架为 <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>，是许多人的首推 Blog 框架。从官方是 Slogan 可见一斑：</p>
+<blockquote>
+<p>A fast, simple &amp; powerful blog framework</p>
+</blockquote>
+</li>
+<li><p>本次搭建的环境为 macOS，下文中的演示&amp;截图将以此为基础。</p>
+</li>
+</ul>
+<hr>
+<h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><p>搭建 Hexo 框架所需的工具并不多，主要有 Git，Node.js，Hexo。而辅助安装的有 Homebrew，nvm。</p>
+<h4 id="安装-Homebrew"><a href="#安装-Homebrew" class="headerlink" title="安装 Homebrew"></a>安装 Homebrew</h4><blockquote>
+<p>Homebrew 是 macOS 上的软件包管理工具，能在 macOS 中方便的安装软件或者卸载软件，相当于 Linux 下的 apt-get、yum 神器；Homebrew 可以在 Mac 上安装一些 OS X 没有的 UNIX 工具，Homebrew 将这些工具统统安装到了 /usr/local/Cellar 目录中，并在 /usr/local/bin 中创建符号链接</p>
+</blockquote>
+<p>Homebrew 官网：<a href="http://brew.sh/index_zh-cn.html" target="_blank" rel="noopener">http://brew.sh/index_zh-cn.html</a></p>
+<p>如官网所展示的，Homebrew 的安装很简单，只需在终端下输入如下指令：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ruby -e &quot;$(curl -fsSL https:&#x2F;&#x2F;raw.githubusercontent.com&#x2F;Homebrew&#x2F;install&#x2F;master&#x2F;install)&quot;</span><br></pre></td></tr></table></figure>
+
+<p>执行成功后如下图所示：</p>
+<figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="https://upload-images.jianshu.io/upload_images/1642454-3cd408ead1cb3493.png?imageMogr2/auto-orient/strip|imageView2/2/w/1200/format/webp" alt="brew-install" title="">
+                </div>
+                <div class="image-caption">brew-install</div>
+            </figure>
+<p>验证一下：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ brew -v</span><br></pre></td></tr></table></figure>
+<p>预期将得到下列结果：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Homebrew 2.2.5</span><br><span class="line">Homebrew&#x2F;homebrew-core (git revision 970e; last commit 2020-02-04)</span><br></pre></td></tr></table></figure>
+
+<p>我理解通过安装 Homebrew 能够较为方便的安装许多开发软件，例如安装 Git，仅需在终端中输入命令：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ brew install git   &#x2F;&#x2F; 安装Git</span><br></pre></td></tr></table></figure>
+
+<h4 id="安装-Node-js"><a href="#安装-Node-js" class="headerlink" title="安装 Node.js"></a>安装 Node.js</h4><h5 id="方法1"><a href="#方法1" class="headerlink" title="方法1"></a>方法1</h5><p>CodeSheep 的教程中提供的是从<a href="https://nodejs.org/en/" target="_blank" rel="noopener">官方网站</a>上下载并无脑安装，较快速且简单.安装完成后会直接安装好 Node.js 和 npm。</p>
+<h5 id="方法2"><a href="#方法2" class="headerlink" title="方法2"></a>方法2</h5><p>这里可以先参考一下<a href="https://zhuanlan.zhihu.com/p/38413720" target="_blank" rel="noopener">《node.js与npm与nvm的关系》</a>便于理解我们的操作步骤。总而言之就是：</p>
+<blockquote>
+<ol>
+<li>nvm：Node.js 的版本管理工具。也就是说：一个 nvm 可以管理很多 Node.js 版本和 npm 版本。</li>
+<li>Node.js：在项目开发时的所需要的代码库。</li>
+<li>npm：Node.js 包管理工具。在安装的 Node.js 的时候，npm 也会跟着一起安装，它是包管理工具。npm 管理 Node.js 中的第三方插件.</li>
+</ol>
+</blockquote>
+<p>所以步骤是：</p>
+<ol>
+<li>通过 Homebrew 安装 nvm：<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ brew install nvm</span><br></pre></td></tr></table></figure></li>
+<li>通过输入如下命令安装 Node.js：<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">nvm install version  &#x2F;&#x2F;此方法没有求证</span><br></pre></td></tr></table></figure>
+
+</li>
+</ol>
+<p>按照以上两种方法中的任意一种安装完 Node.js 后，可以验证一下：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ npm -v</span><br><span class="line">6.13.4</span><br><span class="line">$ node -v</span><br><span class="line">v12.14.1</span><br></pre></td></tr></table></figure>
+<p>这里还有一点，可以通过 cnpm（后续补充，暂且不表）来提升npm的速度。</p>
+<h4 id="安装-Hexo"><a href="#安装-Hexo" class="headerlink" title="安装 Hexo"></a>安装 Hexo</h4><p>Git、Node.js都安装完成后，可以开始安装 Hexo 了。也很简单：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ sudo cnpm install hexo-cli</span><br></pre></td></tr></table></figure>
+<p>安装成功后，惯例验证版本：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">$ hexo -v</span><br><span class="line">hexo-cli: 3.1.0</span><br><span class="line">os: Darwin 19.2.0 darwin x64</span><br><span class="line">node: 12.14.1</span><br><span class="line">v8: 7.7.299.13-node.16</span><br><span class="line">uv: 1.33.1</span><br><span class="line">zlib: 1.2.11</span><br><span class="line">brotli: 1.0.7</span><br><span class="line">ares: 1.15.0</span><br><span class="line">modules: 72</span><br><span class="line">nghttp2: 1.40.0</span><br><span class="line">napi: 5</span><br><span class="line">llhttp: 2.0.1</span><br><span class="line">http_parser: 2.8.0</span><br><span class="line">openssl: 1.1.1d</span><br><span class="line">cldr: 35.1</span><br><span class="line">icu: 64.2</span><br><span class="line">tz: 2019c</span><br><span class="line">unicode: 12.1</span><br></pre></td></tr></table></figure>
+<p>接下来，就是建立 Blog 的项目了，可以找一个你喜欢的路径（我的是在主页下直接建了名为 blog 的文件夹），执行：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo init</span><br></pre></td></tr></table></figure>
+<p>预期会得到结尾为如下的提示：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">INFO Start blogging with Hexo</span><br></pre></td></tr></table></figure>
+<p>然后可以在建立项目的文件夹内看到如下文件，说明 Hexo 的安装就已经成功搞定了。</p>
+
+        </div>
+
+        <blockquote class="post-copyright">
+    
+    <div class="content">
+        
+<span class="post-time">
+    最后更新时间：<time datetime="2020-02-06T15:25:24.944Z" itemprop="dateUpdated">2020-02-06 23:25:24</time>
+</span><br>
+
+
+        
+        原文链接：<a href="/2020/02/06/hexo-learning-1/" target="_blank" rel="external">http://benwong1024.github.io/2020/02/06/hexo-learning-1/</a>
+        
+    </div>
+    
+    <footer>
+        <a href="http://benwong1024.github.io">
+            <img src="/img/avatar.jpg" alt="Ben Wong">
+            Ben Wong
+        </a>
+    </footer>
+</blockquote>
+
+        
+
+
+        <div class="post-footer">
+            
+	<ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hexo/" rel="tag">hexo</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/learning/" rel="tag">learning</a></li></ul>
+
+
+            
+<div class="page-share-wrap">
+    
+
+<div class="page-share" id="pageShare">
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://benwong1024.github.io/2020/02/06/hexo-learning-1/&title=《所以，这个 Blog 是怎么来的呢》 — 小汪同学&pic=http://benwong1024.github.io/img/avatar.jpg" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://benwong1024.github.io/2020/02/06/hexo-learning-1/&title=《所以，这个 Blog 是怎么来的呢》 — 小汪同学&source=" data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://benwong1024.github.io/2020/02/06/hexo-learning-1/" data-title=" Facebook">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《所以，这个 Blog 是怎么来的呢》 — 小汪同学&url=http://benwong1024.github.io/2020/02/06/hexo-learning-1/&via=http://benwong1024.github.io" data-title=" Twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://benwong1024.github.io/2020/02/06/hexo-learning-1/" data-title=" Google+">
+          <i class="icon icon-google-plus"></i>
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+
+    <a href="javascript:;" id="shareFab" class="page-share-fab waves-effect waves-circle">
+        <i class="icon icon-share-alt icon-lg"></i>
+    </a>
+</div>
+
+
+
+        </div>
+    </div>
+
+    
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Valine Comments -->
+    <div class="comments vcomment" id="comments"></div>
+    <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+    <script src="//unpkg.com/valine@latest/dist/Valine.min.js"></script>
+    <!-- Valine Comments script -->
+    <script>
+        var GUEST_INFO = ['nick','mail','link'];
+        var guest_info = 'nick,mail,link'.split(',').filter(function(item){
+          return GUEST_INFO.indexOf(item) > -1
+        });
+        new Valine({
+            el: '#comments',
+            notify: 'true' == 'true',
+            verify: 'false' == 'true',
+            appId: "GLgb81Tq2yppvisG2xnxMGrd-gzGzoHsz",
+            appKey: "V8Pr3Y4saSNsW3POWzSUfK6d",
+            avatar: "mm",
+            placeholder: "Just go go",
+            guest_info: guest_info.length == 0 ? GUEST_INFO : guest_info,
+            pageSize: "10"
+        })
+    </script>
+    <!-- Valine Comments end -->
+
+
+
+
+
+
+
+
+
+
+</article>
+
+
+
+</div>
+
+        <footer class="footer">
+    <div class="top">
+        
+<p>
+    <span id="busuanzi_container_site_uv" style='display:none'>
+        站点总访客数：<span id="busuanzi_value_site_uv"></span>
+    </span>
+    <span id="busuanzi_container_site_pv" style='display:none'>
+        站点总访问量：<span id="busuanzi_value_site_pv"></span>
+    </span>
+</p>
+
+
+        <p>
+            
+            <span>博客内容遵循 <a rel="license noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank">知识共享 署名 - 非商业性 - 相同方式共享 4.0 国际协议</a></span>
+        </p>
+    </div>
+    <div class="bottom">
+        <p><span>Ben Wong &copy; 2015 - 2020</span>
+            <span>
+                
+                Power by <a href="http://hexo.io/" target="_blank">Hexo</a> Theme <a href="https://github.com/yscoder/hexo-theme-indigo" target="_blank">indigo</a>
+            </span>
+        </p>
+    </div>
+</footer>
+
+    </main>
+    <div class="mask" id="mask"></div>
+<a href="javascript:;" id="gotop" class="waves-effect waves-circle waves-light"><span class="icon icon-lg icon-chevron-up"></span></a>
+
+
+
+<div class="global-share" id="globalShare">
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://benwong1024.github.io/2020/02/06/hexo-learning-1/&title=《所以，这个 Blog 是怎么来的呢》 — 小汪同学&pic=http://benwong1024.github.io/img/avatar.jpg" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://benwong1024.github.io/2020/02/06/hexo-learning-1/&title=《所以，这个 Blog 是怎么来的呢》 — 小汪同学&source=" data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://benwong1024.github.io/2020/02/06/hexo-learning-1/" data-title=" Facebook">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《所以，这个 Blog 是怎么来的呢》 — 小汪同学&url=http://benwong1024.github.io/2020/02/06/hexo-learning-1/&via=http://benwong1024.github.io" data-title=" Twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://benwong1024.github.io/2020/02/06/hexo-learning-1/" data-title=" Google+">
+          <i class="icon icon-google-plus"></i>
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+<div class="page-modal wx-share" id="wxShare">
+    <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <img src="//api.qrserver.com/v1/create-qr-code/?data=http://benwong1024.github.io/2020/02/06/hexo-learning-1/" alt="微信分享二维码">
+</div>
+
+
+
+
+    <script src="//cdn.bootcss.com/node-waves/0.7.4/waves.min.js"></script>
+<script>
+var BLOG = { ROOT: '/', SHARE: true, REWARD: false };
+
+
+</script>
+
+<script src="//unpkg.com/hexo-theme-material-indigo@latest/js/main.min.js"></script>
+
+
+<div class="search-panel" id="search-panel">
+    <ul class="search-result" id="search-result"></ul>
+</div>
+<template id="search-tpl">
+<li class="item">
+    <a href="{path}" class="waves-block waves-effect">
+        <div class="title ellipsis" title="{title}">{title}</div>
+        <div class="flex-row flex-middle">
+            <div class="tags ellipsis">
+                {tags}
+            </div>
+            <time class="flex-col time">{date}</time>
+        </div>
+    </a>
+</li>
+</template>
+
+<script src="//unpkg.com/hexo-theme-material-indigo@latest/js/search.min.js" async></script>
+
+
+
+
+
+
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+
+
+</body>
+</html>
