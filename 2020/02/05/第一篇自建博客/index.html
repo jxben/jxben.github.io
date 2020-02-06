@@ -88,7 +88,7 @@
             </li>
         
             <li class="waves-block waves-effect">
-              <a href="http://weibo.cn/benwong1024" target="_blank" >
+              <a href="//weibo.com/benwong1024" target="_blank" >
                 <i class="icon icon-lg icon-weibo"></i>
                 Weibo
               </a>
@@ -192,7 +192,7 @@
 
 
         
-        原文链接：待学习如何用变量实现
+        原文链接：<a href="/2020/02/05/%E7%AC%AC%E4%B8%80%E7%AF%87%E8%87%AA%E5%BB%BA%E5%8D%9A%E5%AE%A2/" target="_blank" rel="external">http://benwong1024.github.io/2020/02/05/%E7%AC%AC%E4%B8%80%E7%AF%87%E8%87%AA%E5%BB%BA%E5%8D%9A%E5%AE%A2/</a>
         
     </div>
     
@@ -271,7 +271,7 @@
     <div class="waves-block waves-effect next">
       <a href="/2020/02/05/hello-world/" id="post-next" class="post-nav-link">
         <div class="tips">Next <i class="icon icon-angle-right icon-lg icon-pl"></i></div>
-        <h4 class="title">Hello World</h4>
+        <h4 class="title">你好</h4>
       </a>
     </div>
   
@@ -291,35 +291,35 @@
 
 
 
-    <!-- Valine Comments -->
-    <div class="comments vcomment" id="comments"></div>
-    <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
-    <script src="//unpkg.com/valine@latest/dist/Valine.min.js"></script>
-    <!-- Valine Comments script -->
+
+
+
+
+
+
+<section class="comments" id="comments">
+    <div id="gitalk-container"></div>
+    <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+    <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
     <script>
-        var GUEST_INFO = ['nick','mail','link'];
-        var guest_info = 'nick,mail,link'.split(',').filter(function(item){
-          return GUEST_INFO.indexOf(item) > -1
-        });
-        new Valine({
-            el: '#comments',
-            notify: 'wangpei_1024@163.com' == 'true',
-            verify: 'false' == 'true',
-            appId: "GLgb81Tq2yppvisG2xnxMGrd-gzGzoHsz",
-            appKey: "V8Pr3Y4saSNsW3POWzSUfK6d",
-            avatar: "mm",
-            placeholder: "Just go go",
-            guest_info: guest_info.length == 0 ? GUEST_INFO : guest_info,
-            pageSize: "10"
+        var id = location.pathname
+        if (location.pathname.length > 50) {
+          id = location.pathname.replace(/\/\d+\/\d+\/\d+\//, '').replace('/', '').substring(0, 50)
+        }
+        const gitalk = new Gitalk({
+          clientID: '',
+          clientSecret: '',
+          repo: '',
+          owner: '',
+          admin: [''],
+          id: id,      // Ensure uniqueness and length less than 50
+          title: document.title.split('|')[0],
+          distractionFreeMode: false  // Facebook-like distraction free mode
         })
+
+        gitalk.render('gitalk-container')
     </script>
-    <!-- Valine Comments end -->
-
-
-
-
-
-
+</section>
 
 
 
