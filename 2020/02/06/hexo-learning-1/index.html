@@ -28,14 +28,15 @@
 <meta property="og:site_name" content="小汪同学">
 <meta property="og:description" content="是的，小汪同学的自建 Blog 来了。  2020 年的春节假期，被一系列关键词渲染得异常特殊：  「武汉肺炎」、「确诊人数」、「封城」、「一级响应」、「口罩预约」、「复工通知」  对于返乡后一直宅着的我而言，意外延长的假期为这个 Blog 的诞生提供了基础——有时间来做些自己以前想做而未行动的事情了。 做为第一篇文章，记录一下这个 Blog 是如何搭建的。  写在开头 感谢 CodeSheep">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/1642454-3cd408ead1cb3493.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1200/format/webp">
+<meta property="og:image" content="https://i.loli.net/2020/02/07/7wJCKo4qvgmVPfc.png">
+<meta property="og:image" content="https://i.loli.net/2020/02/07/whq5ub2IHRnT3sz.png">
 <meta property="article:published_time" content="2020-02-06T10:55:09.000Z">
-<meta property="article:modified_time" content="2020-02-07T02:40:32.640Z">
+<meta property="article:modified_time" content="2020-02-07T14:33:02.700Z">
 <meta property="article:author" content="jxben">
 <meta property="article:tag" content="learning">
 <meta property="article:tag" content="hexo">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://upload-images.jianshu.io/upload_images/1642454-3cd408ead1cb3493.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1200/format/webp">
+<meta name="twitter:image" content="https://i.loli.net/2020/02/07/7wJCKo4qvgmVPfc.png">
     
     <link rel="shortcut icon" href="/favicon.ico">
     <link rel="stylesheet" href="//unpkg.com/hexo-theme-material-indigo@latest/css/style.css">
@@ -161,7 +162,7 @@
     <aside class="post-widget">
         <nav class="post-toc-wrap post-toc-shrink" id="post-toc">
             <h4>TOC</h4>
-            <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#写在开头"><span class="post-toc-number">1.</span> <span class="post-toc-text">写在开头</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#安装"><span class="post-toc-number">2.</span> <span class="post-toc-text">安装</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#安装-Homebrew"><span class="post-toc-number">2.1.</span> <span class="post-toc-text">安装 Homebrew</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#安装-Node-js"><span class="post-toc-number">2.2.</span> <span class="post-toc-text">安装 Node.js</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#安装-Hexo"><span class="post-toc-number">2.2.1.</span> <span class="post-toc-text">安装 Hexo</span></a></li></ol></li></ol></li></ol>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#写在开头"><span class="post-toc-number">1.</span> <span class="post-toc-text">写在开头</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#安装"><span class="post-toc-number">2.</span> <span class="post-toc-text">安装</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#安装-Homebrew"><span class="post-toc-number">2.1.</span> <span class="post-toc-text">安装 Homebrew</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#安装-Node-js"><span class="post-toc-number">2.2.</span> <span class="post-toc-text">安装 Node.js</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#安装-Hexo"><span class="post-toc-number">2.3.</span> <span class="post-toc-text">安装 Hexo</span></a></li></ol></li></ol>
         </nav>
     </aside>
 
@@ -221,9 +222,9 @@
 <figure class="image-bubble">
                 <div class="img-lightbox">
                     <div class="overlay"></div>
-                    <img src="https://upload-images.jianshu.io/upload_images/1642454-3cd408ead1cb3493.png?imageMogr2/auto-orient/strip|imageView2/2/w/1200/format/webp" alt="brew-install" title="">
+                    <img src="https://i.loli.net/2020/02/07/7wJCKo4qvgmVPfc.png" alt="Homebrew 安装成功" title="">
                 </div>
-                <div class="image-caption">brew-install</div>
+                <div class="image-caption">Homebrew 安装成功</div>
             </figure>
 <p>验证一下：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ brew -v</span><br></pre></td></tr></table></figure>
@@ -253,7 +254,7 @@
 <p>按照以上两种方法中的任意一种安装完 Node.js 后，可以验证一下：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ npm -v</span><br><span class="line">6.13.4</span><br><span class="line">$ node -v</span><br><span class="line">v12.14.1</span><br></pre></td></tr></table></figure>
 <p>这里还有一点，可以通过 cnpm（后续补充，暂且不表）来提升npm的速度。</p>
-<h4 id="安装-Hexo"><a href="#安装-Hexo" class="headerlink" title="安装 Hexo"></a>安装 Hexo</h4><p>Git、Node.js都安装完成后，可以开始安装 Hexo 了。也很简单：</p>
+<h3 id="安装-Hexo"><a href="#安装-Hexo" class="headerlink" title="安装 Hexo"></a>安装 Hexo</h3><p>Git、Node.js都安装完成后，可以开始安装 Hexo 了。也很简单：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ sudo cnpm install hexo-cli</span><br></pre></td></tr></table></figure>
 <p>安装成功后，惯例验证版本：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">$ hexo -v</span><br><span class="line">hexo-cli: 3.1.0</span><br><span class="line">os: Darwin 19.2.0 darwin x64</span><br><span class="line">node: 12.14.1</span><br><span class="line">v8: 7.7.299.13-node.16</span><br><span class="line">uv: 1.33.1</span><br><span class="line">zlib: 1.2.11</span><br><span class="line">brotli: 1.0.7</span><br><span class="line">ares: 1.15.0</span><br><span class="line">modules: 72</span><br><span class="line">nghttp2: 1.40.0</span><br><span class="line">napi: 5</span><br><span class="line">llhttp: 2.0.1</span><br><span class="line">http_parser: 2.8.0</span><br><span class="line">openssl: 1.1.1d</span><br><span class="line">cldr: 35.1</span><br><span class="line">icu: 64.2</span><br><span class="line">tz: 2019c</span><br><span class="line">unicode: 12.1</span><br></pre></td></tr></table></figure>
@@ -262,6 +263,18 @@
 <p>预期会得到结尾为如下的提示：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">INFO Start blogging with Hexo</span><br></pre></td></tr></table></figure>
 <p>然后可以在建立项目的文件夹内看到如下文件，说明 Hexo 的安装就已经成功搞定了。</p>
+<figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="https://i.loli.net/2020/02/07/whq5ub2IHRnT3sz.png" alt="Hexo 文件夹" title="">
+                </div>
+                <div class="image-caption">Hexo 文件夹</div>
+            </figure>
+
+
+
+
+
 
         </div>
 
@@ -270,7 +283,7 @@
     <div class="content">
         
 <span class="post-time">
-    最后更新时间：<time datetime="2020-02-07T02:40:32.640Z" itemprop="dateUpdated">2020-02-07 10:40:32</time>
+    最后更新时间：<time datetime="2020-02-07T14:33:02.700Z" itemprop="dateUpdated">2020-02-07 22:33:02</time>
 </span><br>
 
 
@@ -419,7 +432,7 @@
         </p>
     </div>
     <div class="bottom">
-        <p><span>jxben &copy; 2015 - 2020</span>
+        <p><span>jxben &copy; 2020</span>
             <span>
                 
                 Power by <a href="http://hexo.io/" target="_blank">Hexo</a> Theme <a href="https://github.com/yscoder/hexo-theme-indigo" target="_blank">indigo</a>
